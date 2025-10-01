@@ -14,11 +14,11 @@ public class Receipt {
         System.out.println("\n===== BILL SUMMARY =====");
         double total = 0;
         for (Product item : items) {
-            System.out.printf("%-40s ₹%.2f%n", item.getDescription(), item.getCost());
+            System.out.printf("%-40s Rs.%.2f%n", item.getDescription(), item.getCost());
             total += item.getCost();
         }
         System.out.println("----------------------------");
-        System.out.printf("TOTAL: ₹%.2f%n", total);
+        System.out.printf("TOTAL: Rs.%.2f%n", total);
         System.out.println("============================\n");
     }
 }
